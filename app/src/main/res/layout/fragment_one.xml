@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtAngka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Angka1"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtAngka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Angka2"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txthasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="hasil" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btntambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="+"
+            android:text="+"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <Button
+            android:id="@+id/btnkali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="x"
+            android:text="x"
+            android:textSize="@android:dimen/app_icon_size" /></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnkurang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="-"
+            android:text="-"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <Button
+            android:id="@+id/btnbagi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint=":"
+            android:text=":"
+            android:textSize="@android:dimen/app_icon_size" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+
