@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Lingkaran">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.Toolbar>
+
+
+
+    <EditText
+        android:id="@+id/txtJariJari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:hint="Jari Jari" />
+
+    <Button
+        android:id="@+id/btnluas"
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="#51962A"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextHasil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="HITUNG LUAS LINGKARAN" />
+
+    <Button
+        android:id="@+id/btnkeliling"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:background="#51962A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HITUNG KELILING LINGKARAN" />
+
+    <TextView
+        android:id="@+id/txt_hasil"
+        android:textColor="#DB2222"
+        android:layout_marginTop="50dp"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextHasil"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginBottom="16dp"
+        android:text="Hasil" />
+
+
+</LinearLayout>
+
+

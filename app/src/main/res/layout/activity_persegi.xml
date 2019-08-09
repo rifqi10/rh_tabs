@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:text="Luas Persegi Dan Keliling Persegi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_judul"
+        android:textColor="@android:color/holo_blue_dark" />
+
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="sisi1"
+        android:ems="10"
+        android:layout_below="@+id/txt_judul"
+        android:layout_alignLeft="@+id/txt_judul"
+        android:layout_alignStart="@+id/txt_judul"
+        android:layout_marginTop="10dp"
+        android:id="@+id/sisi" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:textColor="#FFFFFF"
+        android:background="#51962A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="HITUNG LUAS PERSEGI" />
+    <Button
+        android:id="@+id/keliling"
+        android:textColor="#FFFFFF"
+        android:background="#51962A"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HITUNG KELILING PERSEGI"/>
+
+    <TextView
+        android:text="hasil"
+        android:textColor="#DB2222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_hasil"/>
+</LinearLayout>

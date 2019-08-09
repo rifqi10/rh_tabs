@@ -1,15 +1,53 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="info.androidhive.materialtabs.fragments.TwoFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/two"
-        android:textSize="40dp"
-        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnSEGITIGA"
+        android:background="@color/m"
+        android:textColor="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:drawableLeft="@drawable/ic_launcher_foreground"
+        android:text="SEGITIGA"
+        />
 
-</RelativeLayout>
+    <Button
+        android:background="#53D8AE"
+        android:textColor="#FFF"
+        android:id="@+id/btnPERSEGI"
+        android:drawableLeft="@drawable/a"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:text="PERSEGI" />
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <Button
+            android:background="@color/m"
+            android:textColor="#FFF"
+            android:id="@+id/btnPERSEGIPANJANG"
+            android:drawableLeft="@drawable/b"
+            android:layout_width="match_parent"
+            android:layout_height="189dp"
+            android:text="PERSEGIPANJANG" />
+
+    <Button
+        android:background="#53D8AE"
+        android:textColor="#FFF"
+        android:id="@+id/btnLINGKARAN"
+        android:drawableLeft="@drawable/c"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:text="LINGKARAN" />
+
+
+</LinearLayout>
+</LinearLayout>

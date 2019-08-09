@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Segitiga">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/txtAlas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alas"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/alas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:digits="0,1,2,3,4,5,6,7,8,9"
+        android:ems="10"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTinggi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tinggi"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/tinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:digits="0,1,2,3,4,5,6,7,8,9"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnhitung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#51962A"
+            android:text="Hitung Luas Segitiga"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/keliling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#51962A"
+            android:text="HITUNG KELILING SEGITIGA"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txthasil"
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="hasil "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#DB2222" />
+    </LinearLayout>
+</LinearLayout>
